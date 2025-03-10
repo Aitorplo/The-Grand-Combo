@@ -115,98 +115,101 @@ political_decisions = {
 	}
 
 #German Annex Texas#
-	german_texas = {	####Based on :https://www.deviantart.com/arminius1871/art/What-if-the-USA-had-german-names-483272194"####
-		picture = all_texas
-		potential = {
-			ai = no
-			exists = TEX
-			is_greater_power = yes
-			OR = {
-				tag = GER
-				tag = GCF
-				tag = PRU
-				tag = NGF
-			}
-			NOT = { has_global_flag = extra_flavour_disabled }
-			OR = {
-				AND = {
-					132 = { pop_majority_culture = north_german }
-					133 = { pop_majority_culture= north_german }
-				}
-				AND = {
-					has_global_flag = german_texas_funding3
-					TEX = { in_sphere = THIS }
-				}
-			}
-			NOT = { has_global_flag = german_texas }
-		}
+#German Annex Texas#
+german_texas = { ####Based on :https://www.deviantart.com/arminius1871/art/What-if-the-USA-had-german-names-483272194"####
+    picture = all_texas
+    potential = {
+        ai = no
+        exists = TEX
+        is_greater_power = yes
+        OR = {
+            tag = GER
+            tag = GCF
+            tag = PRU
+            tag = NGF
+        }
+        NOT = { has_global_flag = extra_flavour_disabled }
+        OR = {
+            AND = {
+                132 = { pop_majority_culture = north_german }
+                133 = { pop_majority_culture = north_german }
+            }
+            AND = {
+                has_global_flag = german_texas_funding3
+                TEX = { in_sphere = THIS }
+            }
+        }
+        NOT = { has_global_flag = german_texas }
+    }
 
-		allow = {
-			money = 300000
-			war = no
-		}
+    allow = {
+        money = 300000
+        war = no
+    }
 
-		effect = {
-			set_global_flag = german_texas
-			money = -300000
-			133 = {
-				change_province_name = "Friedrichsburg"
-				state_scope = { change_region_name = "Neu Nassau" }
-			}
-			134 = { change_province_name = "Biebrich" }
-			137 = { change_province_name = "Neu Braunfels" }
-			3369 = { change_province_name = "Sch�neberg" }
-			3370 = { change_province_name = "Marzahn" }
-			inherit = TEX
-			138 = {	secede_province = MEX }
-			136 = {	secede_province = MEX }
-			3372 = { secede_province = MEX }
-			release_vassal = TEX
-			TEX = { change_tag = ADV }
-			ADV = {
-				set_country_flag = post_colonial_country
-				primary_culture = north_german
-				add_accepted_culture = texan
-				political_reform = universal_voting
-				political_reform = state_equal_weight
-				political_reform = free_press
-				political_reform = secret_ballots
-				political_reform = no_draft
-				political_reform = all_voting_pops
-				political_reform = debtors_prisons
-				political_reform = state_controlled
-				political_reform = no_slavery
-			}
-			133 = { add_core = ADV }
-			132 = { add_core = ADV }
-			137 = { add_core = ADV }
-			43 = { add_core = ADV }
-			3371 = { add_core = ADV }
-			3369 = { add_core = ADV }
-			3370 = { add_core = ADV }
-			138 = { remove_core = ADV }
-			136 = { remove_core = ADV }
-			105 = { remove_core = ADV }
-			2631 = { remove_core = ADV }
-			129 = { remove_core = ADV }
-			128 = { remove_core = ADV }
-			103 = { remove_core = ADV }
-			107 = { remove_core = ADV }
-			3372 = { remove_core = ADV }
-			133 = { remove_core = MEX }
-			132 = { remove_core = MEX }
-			137 = { remove_core = MEX }
-			43 = { remove_core = MEX }
-			3371 = { remove_core = MEX }
-			3369 = { remove_core = MEX }
-			3370 = { remove_core = MEX }
-			134 = { remove_core = MEX }
-			ADV = { government = dominion }
-			GER = { set_country_flag = germany_has_annexed_texas }
-		}
-		ai_will_do = { factor = 0.2 }
-	}
-
+    effect = {
+        set_global_flag = german_texas
+        money = -300000
+        133 = {
+            change_province_name = "Friedrichsburg"
+            state_scope = { change_region_name = "Neu Nassau" }
+        }
+        134 = { change_province_name = "Biebrich" }
+        137 = { change_province_name = "Neu Braunfels" }
+        3369 = { change_province_name = "Schöneberg" }
+        3370 = { change_province_name = "Marzahn" }
+        inherit = TEX
+        138 = { secede_province = MEX }
+        136 = { secede_province = MEX }
+        3372 = { secede_province = MEX }
+        release_vassal = TEX
+        TEX = { change_tag = ADV }
+        ADV = {
+            set_country_flag = post_colonial_country
+            primary_culture = north_german
+            add_accepted_culture = texan
+            political_reform = universal_voting
+            political_reform = state_equal_weight
+            political_reform = free_press
+            political_reform = secret_ballots
+            political_reform = no_draft
+            political_reform = all_voting_pops
+            political_reform = debtors_prisons
+            political_reform = state_controlled
+            political_reform = no_slavery
+        }
+        133 = { add_core = ADV }
+        132 = { add_core = ADV }
+        137 = { add_core = ADV }
+        43 = { add_core = ADV }
+        3371 = { add_core = ADV }
+        3369 = { add_core = ADV }
+        3370 = { add_core = ADV }
+        138 = { remove_core = ADV }
+        136 = { remove_core = ADV }
+        105 = { remove_core = ADV }
+        2631 = { remove_core = ADV }
+        129 = { remove_core = ADV }
+        128 = { remove_core = ADV }
+        103 = { remove_core = ADV }
+        107 = { remove_core = ADV }
+        3372 = { remove_core = ADV }
+        133 = { remove_core = MEX }
+        132 = { remove_core = MEX }
+        137 = { remove_core = MEX }
+        43 = { remove_core = MEX }
+        3371 = { remove_core = MEX }
+        3369 = { remove_core = MEX }
+        3370 = { remove_core = MEX }
+        134 = { remove_core = MEX }
+        ADV = { government = dominion }
+        PRU = { set_country_flag = germany_has_annexed_texas }
+        NGF = { set_country_flag = germany_has_annexed_texas }
+        GER = { set_country_flag = germany_has_annexed_texas }
+    }
+    ai_will_do = { factor = 0.2 }
+}
+	
 #German Cuba#
 	organize_kuba = {
 		picture = treaty_signing
