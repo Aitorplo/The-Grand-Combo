@@ -1,0 +1,48 @@
+country_event = {
+    id = 5000302
+    title = "EVTNAME5000302"
+    desc = "EVTDESC5000302"
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA5000302" º
+        prestige = -30
+        relation = { who = GER, value = 100 }
+        relation = { who = PRU, value = 100 }
+        relation = { who = NGF, value = 100 }
+        138 = { secede_province = ADV }
+        136 = { secede_province = ADV }
+        3372 = { secede_province = ADV }
+        129 = { secede_province = ADV }
+        138 = { remove_core = MEX }
+        136 = { remove_core = MEX }
+        3372 = { remove_core = MEX }
+        129 = { remove_core = MEX }
+        138 = { add_core = ADV }
+        136 = { add_core = ADV }
+        3372 = { add_core = ADV }
+        129 = { add_core = ADV }
+        money = 500000
+        badboy = -3
+        ai_chance = {
+            factor = 30
+        }
+    },
+
+    option = {
+        name = "EVTOPTB5000302",
+        prestige = 23
+ relation = { who = GER value = -50 }
+        relation = { who = PRU value = -50 }
+        relation = { who = NGF value = -50 }
+        war = {
+	 target = { ADV }
+	 attacker_goal = { casus_belli = liberate_cores }
+	 defender_goal = { casus_belli = humiliate }
+	c all_ally = { yes }
+ }
+                ai_chance = {
+            factor = 70
+        }
+    }
+}
