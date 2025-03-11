@@ -1,8 +1,8 @@
 political_decisions = {
     expand_german_texas = {
         picture = colonization
-        
-        potential = {
+      
+       potential = {
             ai = no
             OR = {
                 tag = PRU
@@ -27,7 +27,7 @@ political_decisions = {
             136 = { add_core = ADV }
             3372 = { add_core = ADV }
             129 = { add_core = ADV }
-            country_event = { id = 50333 days = 1 } # Trigger the event for Mexico
+            country_event = { id = 50333 days = 1 } 
         }
 
         ai_will_do = {
@@ -38,12 +38,14 @@ political_decisions = {
 
 country_event = {
     id = 50333
-    title = "EVTNAME50333"
-    desc = "EVTDESC50333"
     picture = "colonization"
 
     trigger = {
-        has_country_flag = further_german_investment_in_america
+        OR = {
+            PRU = { has_country_flag = further_german_investment_in_america }
+            GER = { has_country_flag = further_german_investment_in_america }
+            NGF = { has_country_flag = further_german_investment_in_america }
+        }
         tag = MEX
     }
 
@@ -52,7 +54,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTA50333"
+        name = "I'm so scared, take the land!"
         prestige = -10
         relation = { who = GER value = -100 }
         relation = { who = PRU value = -100 }
@@ -68,7 +70,7 @@ country_event = {
     }
 
     option = {
-        name = "EVTOPTB50333"
+        name = "We are not giving our land away"
         prestige = +7
         relation = { who = GER value = -50 }
         relation = { who = PRU value = -50 }
