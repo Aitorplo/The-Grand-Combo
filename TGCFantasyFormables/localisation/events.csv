@@ -3,3 +3,6 @@ EVTNAME5000302;The Germans threaten us;;;;;;;;;;;;x
 EVTDESC5000302;We have just received a letter from the North Germans, they are asking us to give them a portion of our land in North America. They are offering us a lot of money, but we can´t just give them our land!;;;;;;;;;;;;x
 EVTOPTA5000302;I'm so scared, take the land!;;;;;;;;;;;;x
 EVTOPTB5000302;We are not giving our land away;;;;;;;;;;;;x
+EVTNAME5000303;South German Immigration;;;;;;;;;;;;x
+EVTDESC5000303;South Germans are migrating to our newly acquired provinces.;;;;;;;;;;;;x
+EVTOPTA5000303;We welcome them!;;;;;;;;;;;;x

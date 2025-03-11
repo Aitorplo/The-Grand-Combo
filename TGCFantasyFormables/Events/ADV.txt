@@ -1,0 +1,32 @@
+country_event = {
+    id = 5000303
+    title = "EVTNAME5000303"
+    desc = "EVTDESC5000303"
+    trigger = {
+        tag = ADV
+        owns = 136
+        owns = 129
+    
+    }
+
+ mean_time_to_happen = {
+        days = 14
+    }
+
+ option = {
+        name = "EVTOPTA5000303"
+        136 = {
+            pop_migration = {
+                culture = lower_german
+                size = 10000
+            }
+        }
+        129 = {
+            pop_migration = {
+                culture = lower_german
+                size = 10000
+            }
+        }
+        ai_chance = { factor = 100 }
+    }
+}

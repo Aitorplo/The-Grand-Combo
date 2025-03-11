@@ -24,25 +24,23 @@ country_event = {
         129 = { add_core = ADV }
         money = 500000
         badboy = -3
-        ai_chance = {
-            factor = 30
-        }
+        ai_chance = { factor = 30 }
     },
 
     option = {
         name = "EVTOPTB5000302",
         prestige = 23
- relation = { who = GER value = -50 }
+        relation = { who = GER value = -50 }
         relation = { who = PRU value = -50 }
         relation = { who = NGF value = -50 }
+        ADV = { trigger_country_event = { id = 5000303 days = 300 } }
         war = {
 	 target = { ADV }
 	 attacker_goal = { casus_belli = liberate_cores }
 	 defender_goal = { casus_belli = humiliate }
-	c all_ally = { yes }
+	 call_ally = { yes }
  }
-                ai_chance = {
-            factor = 70
-        }
+     
+     ai_chance = { factor = 70 }
     }
 }

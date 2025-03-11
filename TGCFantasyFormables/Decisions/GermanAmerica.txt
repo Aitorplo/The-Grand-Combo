@@ -9,6 +9,10 @@ political_decisions = {
                 tag = PRU
                 tag = NGF
                 tag = GER
+                AND = {
+                    tag = ADV
+                    ai = no
+                }
             }
             is_greater_power = yes
             has_country_flag = germany_has_annexed_texas
